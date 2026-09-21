@@ -2,7 +2,6 @@
 #stripe based chkr  source code
 
 import logging
-import os
 import warnings
 import time
 from telegram.ext import Updater, CommandHandler
@@ -15,10 +14,8 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 #configuration aapna telegram bot token dalna hai yaha
 
-TELEGRAM_TOKEN = os.environ.get("BOT_TOKEN")
-if not TELEGRAM_TOKEN:
-    raise SystemExit("BOT_TOKEN env var not set. export BOT_TOKEN='1234:AAH...' first.")
 
+TELEGRAM_TOKEN = "8516705088:AAFOVrbTmFjXM7io585MmseQw38aUu2giF4"
 STRIPE_API = "https://api.stripe.com/v1/payment_methods"
 SITE_URL_STEP2 = "https://www.act-today.org/wp-admin/admin-ajax.php"
 
